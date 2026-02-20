@@ -1,0 +1,29 @@
+app:
+  user_id: "me"
+  # coloque o credentials.json na raiz do projeto
+  credentials_path: "./credentials.json"
+  # token salvo localmente
+  token_path: "./token.json"
+  # segurança: por padrão só simula
+  dry_run: true
+  page_size: 200
+
+rules:
+  - name: "LinkedIn antigo -> Lixo"
+    # Gmail search query (mesmo formato da barra de busca do Gmail) :contentReference[oaicite:2]{index=2}
+    query: "from:linkedin.com older_than:14d -is:starred -is:important"
+    action: "TRASH"
+    max_results: 2000
+    include_spam_trash: false
+
+  - name: "Duolingo antigo -> Lixo"
+    query: "from:duolingo.com older_than:14d -is:starred -is:important"
+    action: "TRASH"
+    max_results: 2000
+    include_spam_trash: false
+
+  - name: "Spam velho -> Lixo"
+    query: "in:spam older_than:7d"
+    action: "TRASH"
+    max_results: 5000
+    include_spam_trash: true

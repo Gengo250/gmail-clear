@@ -1,0 +1,13 @@
+# credenciais e tokens
+credentials.json
+token.json
+
+# venv
+.venv/
+
+# python
+__pycache__/
+*.pyc
+
+# logs
+*.log

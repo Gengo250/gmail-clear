@@ -1,0 +1,2 @@
+[console_scripts]
+gmail-cleaner = gmail_cleaner.cli:main

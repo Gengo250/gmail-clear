@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+src/gmail_cleaner/__init__.py
+src/gmail_cleaner/__main__.py
+src/gmail_cleaner/auth.py
+src/gmail_cleaner/cleaner.py
+src/gmail_cleaner/cli.py
+src/gmail_cleaner/config.py
+src/gmail_cleaner/gmail_api.py
+src/gmail_cleaner/log.py
+src/gmail_cleaner.egg-info/PKG-INFO
+src/gmail_cleaner.egg-info/SOURCES.txt
+src/gmail_cleaner.egg-info/dependency_links.txt
+src/gmail_cleaner.egg-info/entry_points.txt
+src/gmail_cleaner.egg-info/top_level.txt
