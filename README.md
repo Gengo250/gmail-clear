@@ -24,7 +24,7 @@ Automação **estritamente pessoal** para ajudar a manter a caixa do Gmail organ
 - [Segurança](#seguran%C3%A7a)
 - [Troubleshooting](#troubleshooting)
 - [Roadmap](#roadmap)
-- [Licen%C3%A7a](#licen%C3%A7a)
+- [Licen](#licen%C3%A7a)
 
 ---
 
