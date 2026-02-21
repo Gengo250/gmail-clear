@@ -22,6 +22,12 @@ rules:
     max_results: 2000
     include_spam_trash: false
 
+  - name: "Code Vagas antigo -> Lixo"
+    query: from:contato@codevagas.dev older_than:14d -is:starred -is:important
+    action: "TRASH"
+    max_results: 2000
+    include_spam_trash: false
+
   - name: "Spam velho -> Lixo"
     query: "in:spam older_than:7d"
     action: "TRASH"
