@@ -278,14 +278,6 @@ rm -f token.json
 gmail-cleaner auth
 ```
 
----
-
-## Roadmap
-
-- Operações em lote (batch) para reduzir tempo em caixas muito grandes
-- Relatório por execução (JSON/CSV) com auditoria do que foi movido
-- Allowlist (domínios protegidos)
-- Agendamento via `systemd timer`/`cron`
 
 ---
 
