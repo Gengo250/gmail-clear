@@ -11,25 +11,25 @@ app:
 rules:
   - name: "LinkedIn antigo -> Lixo"
     # Gmail search query (mesmo formato da barra de busca do Gmail) :contentReference[oaicite:2]{index=2}
-    query: "from:linkedin.com older_than:14d -is:starred -is:important"
+    query: "from:linkedin.com older_than:5d -is:starred -is:important"
     action: "TRASH"
     max_results: 2000
     include_spam_trash: false
 
   - name: "Duolingo antigo -> Lixo"
-    query: "from:duolingo.com older_than:14d -is:starred -is:important"
+    query: "from:duolingo.com older_than:5d -is:starred -is:important"
     action: "TRASH"
     max_results: 2000
     include_spam_trash: false
 
   - name: "Code Vagas antigo -> Lixo"
-    query: from:contato@codevagas.dev older_than:14d -is:starred -is:important
+    query: from:contato@codevagas.dev older_than:5d -is:starred -is:important
     action: "TRASH"
     max_results: 2000
     include_spam_trash: false
 
   - name: "Spam velho -> Lixo"
-    query: "in:spam older_than:7d"
+    query: "in:spam older_than:3d"
     action: "TRASH"
     max_results: 5000
     include_spam_trash: true
